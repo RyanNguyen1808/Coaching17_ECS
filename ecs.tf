@@ -18,7 +18,7 @@ module "ecs" {
       container_definitions = {
         Group4-NAME = { #container name -> Change
           essential = true
-          image     = "${data.aws_caller_identity.current.account_id}.dkr.ecr.${data.aws_region.current.name}.amazonaws.com/${local.prefix}-ecr:latest"
+          image     = "255945442255.dkr.ecr.us-east-1.amazonaws.com/group4-ecr:b9f2d2ac7b7e8e76c8574f899fabd5c81d759567"
           port_mappings = [
             {
               containerPort = 8080
